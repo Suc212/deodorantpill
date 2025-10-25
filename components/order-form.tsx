@@ -219,7 +219,8 @@ export default function OrderForm() {
             )}
           </Button>
 
-          
+          {/* This empty div prevents unwanted text from being injected below the form */}
+          <div />
         </form>
       </CardContent>
     </Card>
