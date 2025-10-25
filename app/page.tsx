@@ -40,11 +40,11 @@ export default function LandingPage() {
                 <div className="text-center space-y-4">
                   <div className="flex items-center gap-8 justify-evenly">
                     <div className="text-center">
-                      <p className="text-3xl font-bold text-stone-600">GHC 550</p>
+                      <p className="text-3xl font-bold text-stone-600">GHC 450</p>
                       <p className="text-sm text-muted-foreground">1 Bottle (30 days)</p>
                     </div>
                     <div className="text-center">
-                      <p className="text-3xl font-bold text-emerald-600">GHC 1000</p>
+                      <p className="text-3xl font-bold text-emerald-600">GHC 800</p>
                       <p className="text-sm text-muted-foreground">2 Bottles (60 days)</p>
                       <Badge className="bg-emerald-100 text-emerald-800 text-xs">Save GHC 100</Badge>
                     </div>
@@ -571,12 +571,12 @@ export default function LandingPage() {
               <CardHeader className="text-center">
                 <CardTitle className="text-2xl">Single Bottle</CardTitle>
                 <CardDescription>Perfect for trying out</CardDescription>
-                <div className="text-4xl font-bold text-stone-600 mt-4">550 GHC</div>
+                <div className="text-4xl font-bold text-stone-600 mt-4">GHC 450</div>
                 <p className="text-muted-foreground">30-day supply</p>
               </CardHeader>
               <CardContent className="space-y-4">
                 <Button className="w-full bg-emerald-600 hover:bg-emerald-700" size="lg" onClick={scrollToOrderForm}>
-                  Order Single Bottle
+                  Order 1 Bottle
                 </Button>
                 <ul className="space-y-2 text-sm">
                   <li className="flex items-center gap-2">
@@ -598,13 +598,13 @@ export default function LandingPage() {
               <CardHeader className="text-center">
                 <CardTitle className="text-2xl">Double Pack</CardTitle>
                 <CardDescription>Save 100 GHC</CardDescription>
-                <div className="text-4xl font-bold text-emerald-600 mt-4">1000 GHC</div>
+                <div className="text-4xl font-bold text-emerald-600 mt-4">GHC 800</div>
                 <p className="text-muted-foreground">60-day supply</p>
-                <p className="text-sm text-emerald-600 font-semibold">Save 100 GHC vs single bottles</p>
+                <p className="text-sm text-emerald-600 font-semibold">Save GHC 100 vs single bottles</p>
               </CardHeader>
               <CardContent className="space-y-4">
                 <Button className="w-full bg-emerald-600 hover:bg-emerald-700" size="lg" onClick={scrollToOrderForm}>
-                  Order Double Pack
+                  Order 2 Bottles
                 </Button>
                 <ul className="space-y-2 text-sm">
                   <li className="flex items-center gap-2">
@@ -715,11 +715,11 @@ export default function LandingPage() {
               <div className="text-center mb-8">
                 <div className="flex items-center justify-center gap-8 mb-6">
                   <div className="text-center">
-                    <p className="text-3xl font-bold text-stone-600">GHC 550</p>
+                    <p className="text-3xl font-bold text-stone-600">GHC 450</p>
                     <p className="text-sm text-muted-foreground">1 Bottle (30 days)</p>
                   </div>
                   <div className="text-center">
-                    <p className="text-3xl font-bold text-emerald-600">GHC 1000</p>
+                    <p className="text-3xl font-bold text-emerald-600">GHC 800</p>
                     <p className="text-sm text-muted-foreground">2 Bottles (60 days)</p>
                     <Badge className="bg-emerald-100 text-emerald-800 text-xs">Save GHC 100</Badge>
                   </div>
