@@ -20,8 +20,8 @@ export default function OrderForm() {
     email: "",
     phone: "+233",
     whatsapp: "+233",
-    quantity: "1 Bottle For Ghs 550 + Free Delivery",
-    delivery: " within 24hrs",
+    quantity: "1-bottle-450",
+    delivery: "24hrs",
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitted, setSubmitted] = useState(false)
@@ -180,9 +180,9 @@ export default function OrderForm() {
                 <SelectValue placeholder="Select quantity" />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="1-bottle-550">1 Bottle For Ghs 550 + Free Delivery</SelectItem>
-                <SelectItem value="2-bottles-1000">2 Bottles For Ghs 1000 + Free Delivery (Save Ghs 100)</SelectItem>
-                <SelectItem value="3-bottles-1500">3 Bottles For Ghs 1500 + Free Delivery (Save Ghs 150)</SelectItem>
+                <SelectItem value="1-bottle-450">1 Bottle For Ghs 450 + Free Delivery</SelectItem>
+                <SelectItem value="2-bottles-800">2 Bottles For Ghs 800 + Free Delivery (Save Ghs 100)</SelectItem>
+                <SelectItem value="3-bottles-1100">3 Bottles For Ghs 1100 + Free Delivery (Save Ghs 200)</SelectItem>
               </SelectContent>
             </Select>
           </div>
@@ -219,9 +219,7 @@ export default function OrderForm() {
             )}
           </Button>
 
-          <p className="text-sm text-muted-foreground text-center">
-            Please do not submit passwords through Cognito Forms.
-          </p>
+          
         </form>
       </CardContent>
     </Card>
