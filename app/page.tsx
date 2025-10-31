@@ -69,7 +69,7 @@ export default function LandingPage() {
             <div className="relative">
               <div className="aspect-square bg-stone-100 dark:bg-stone-900 rounded-3xl p-8 flex items-center justify-center">
                 <img
-                  src="/product-bottles.png"
+                  src="/deos-body-deodorizer-500758.png"
                   alt="Two bottles of deos supplement showing natural effective formula for fresh underarms, private area, and breath"
                   className="w-full h-full object-contain"
                 />
