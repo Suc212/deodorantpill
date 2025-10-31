@@ -81,7 +81,7 @@ export default function OrderForm() {
   return (
     <Card>
       <CardHeader>
-        <CardTitle className="text-2xl font-bold">DEODORANT PILLS</CardTitle>
+        <CardTitle className="text-2xl font-bold">Deos Capsules</CardTitle>
         <p className="text-sm text-muted-foreground">
           NB: Please make sure you are available within 24-48 hours of initiating this order to receive your product.
         </p>
