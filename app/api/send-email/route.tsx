@@ -27,7 +27,7 @@ export async function POST(request: NextRequest) {
     const { data, error } = await resend.emails.send({
       from: "onboarding@resend.dev",
       to: ["allthegoodthings14@gmail.com"], // Account owner's email due to Resend limitations
-      subject: "New Deodorant Pills Order Received",
+      subject: "New Deos Capsules Order Received",
       html: `
         <h2>New Order Notification</h2>
         <p><strong>Customer Details:</strong></p>
@@ -41,7 +41,7 @@ export async function POST(request: NextRequest) {
           <li><strong>Delivery:</strong> ${orderData.delivery}</li>
           <li><strong>Order Time:</strong> ${new Date().toLocaleString()}</li>
         </ul>
-        <p><em>Note: To receive emails at omotayo.olukale@gmail.com, please verify a domain at resend.com/domains</em></p>
+        
       `,
     })
 

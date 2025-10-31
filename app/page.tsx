@@ -30,7 +30,7 @@ export default function LandingPage() {
                   Smell confident <span className="text-emerald-600">From The Inside Out</span>
                 </h1>
                 <p className="text-xl text-muted-foreground leading-relaxed max-w-lg">
-                  Deodorant is a gentle, plant‑based deodorant pill with chlorophyllin and mint that stops all body
+                  Deos is a gentle, plant‑based deodorant pill with chlorophyllin and mint that stops all body
                   odors from the inside out. It leaves every part of the body smelling fresh all day including private
                   areas and the mouth also, so you feel calm and confident in hot weather, workouts, and everyday life.
                 </p>
@@ -70,7 +70,7 @@ export default function LandingPage() {
               <div className="aspect-square bg-stone-100 dark:bg-stone-900 rounded-3xl p-8 flex items-center justify-center">
                 <img
                   src="/product-bottles.png"
-                  alt="Two bottles of deodorant supplement showing natural effective formula for fresh underarms, private area, and breath"
+                  alt="Two bottles of deos supplement showing natural effective formula for fresh underarms, private area, and breath"
                   className="w-full h-full object-contain"
                 />
               </div>
@@ -341,7 +341,7 @@ export default function LandingPage() {
                 The Science Behind Body Magic
               </Badge>
               <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-6">
-                How Deodorant pills Works From Within
+                How Deos Capsules Work From Within
               </h2>
               <div className="space-y-6">
                 <div className="flex gap-4">
@@ -403,7 +403,7 @@ export default function LandingPage() {
                     <Leaf className="w-12 h-12 text-emerald-600" />
                   </div>
                   <div>
-                    <h3 className="text-2xl font-bold mb-2">Why Deodorant Pill Works</h3>
+                    <h3 className="text-2xl font-bold mb-2">Why Deos Supplement Works</h3>
                     <p className="text-muted-foreground mb-4">Natural Internal Deodorant</p>
                   </div>
                   <div className="space-y-4 text-left">
@@ -439,7 +439,7 @@ export default function LandingPage() {
               Simple to Use, Even If You Can't Swallow Pills
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Deodorant is designed for everyone. Here are two easy ways to take it.
+              Deos is designed for everyone. Here are two easy ways to take it.
             </p>
           </div>
 
@@ -636,7 +636,7 @@ export default function LandingPage() {
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <Card>
               <CardHeader>
-                <CardTitle className="text-lg">Is Body Magic safe to take daily?</CardTitle>
+                <CardTitle className="text-lg">Is Deos safe to take daily?</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
@@ -751,7 +751,7 @@ export default function LandingPage() {
       <footer className="py-12 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="text-center space-y-4">
-            <h3 className="text-xl font-semibold text-foreground">Deodorant Pills </h3>
+            <h3 className="text-xl font-semibold text-foreground">Deos Supplement </h3>
             <p className="text-muted-foreground">Natural internal deodorant supplement with chlorophyllin and mint</p>
             <div className="flex justify-center gap-6 text-sm text-muted-foreground">
               <a href="#" className="hover:text-emerald-600">
