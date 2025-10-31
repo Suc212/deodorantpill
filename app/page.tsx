@@ -69,7 +69,7 @@ export default function LandingPage() {
             <div className="relative">
               <div className="aspect-square bg-stone-100 dark:bg-stone-900 rounded-3xl p-8 flex items-center justify-center">
                 <img
-                  src="/deos-body-deodorizer-500758.png"
+                  src="/deos-body-deodorizer-477480.webp"
                   alt="Two bottles of deos supplement showing natural effective formula for fresh underarms, private area, and breath"
                   className="w-full h-full object-contain"
                 />
@@ -489,8 +489,8 @@ export default function LandingPage() {
             <div className="space-y-6">
               <div className="aspect-video bg-stone-100 dark:bg-stone-900 rounded-2xl flex items-center justify-center">
                 <img
-                  src="/ingredient-spotlight.jpeg"
-                  alt="Ingredient spotlight showing chlorophyll, parsley, and peppermint capsules with their benefits"
+                  src="/deos-body-deodorizer-987562.webp"
+                  alt="Deos capsules product image"
                   className="w-full h-full object-cover rounded-2xl"
                 />
               </div>
