@@ -27,7 +27,7 @@ export default function LandingPage() {
               </Badge>
               <div className="space-y-4">
                 <h1 className="text-4xl lg:text-6xl font-bold text-foreground leading-tight">
-                  Stop all body odors<span className="text-emerald-600">from the source</span>
+                  Stop all body odors <span className="text-emerald-600">from the source</span>
                 </h1>
                 <p className="text-xl text-muted-foreground leading-relaxed max-w-lg">
                   Deos is a gentle, plant‑based deodorant pill with chlorophyllin and mint that stops all body
