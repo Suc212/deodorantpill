@@ -4,7 +4,6 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Updated color tokens to match design brief with orange primary and warm neutrals */
   --background: oklch(1 0 0);
   --foreground: oklch(0.35 0 0);
   --card: oklch(0.99 0.01 85);
@@ -115,10 +114,107 @@
 }
 
 @layer base {
+  html {
+    font-family: var(--font-sans), sans-serif;
+    scroll-behavior: smooth;
+  }
+
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display), serif;
+    letter-spacing: -0.03em;
+  }
+}
+
+@layer utilities {
+  .display-title {
+    font-family: var(--font-display), serif;
+    letter-spacing: -0.04em;
+    line-height: 0.95;
+  }
+
+  .section-shell {
+    @apply px-4 py-14 sm:px-6 sm:py-18 lg:px-8 lg:py-24;
+  }
+
+  .section-frame {
+    @apply mx-auto max-w-6xl;
+  }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-2 rounded-full border border-emerald-200/70 bg-white/80 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.24em] text-emerald-800 backdrop-blur;
+  }
+
+  .soft-card {
+    @apply rounded-[1.5rem] border border-white/70 bg-white/88 shadow-[0_18px_50px_rgba(19,44,31,0.08)] backdrop-blur;
+  }
+
+  .section-copy {
+    @apply text-[15px] leading-7 text-muted-foreground sm:text-base;
+  }
+
+  .balanced-text {
+    text-wrap: balance;
+  }
+
+  .hero-glow {
+    background:
+      radial-gradient(circle at top right, rgba(109, 207, 148, 0.28), transparent 30%),
+      radial-gradient(circle at left 20%, rgba(59, 191, 160, 0.18), transparent 26%),
+      linear-gradient(180deg, rgba(18, 32, 23, 0.98), rgba(14, 26, 19, 1));
+  }
+
+  .product-halo {
+    background: radial-gradient(circle, rgba(109, 207, 148, 0.3), rgba(109, 207, 148, 0.06) 45%, transparent 72%);
+  }
+
+  .animate-float-soft {
+    animation: float-soft 6s ease-in-out infinite;
+  }
+
+  .animate-rise-soft {
+    animation: rise-soft 0.75s ease-out both;
+  }
+}
+
+@keyframes float-soft {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes rise-soft {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .animate-float-soft,
+  .animate-rise-soft {
+    animation: none !important;
   }
 }

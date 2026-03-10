@@ -1,12 +1,21 @@
 import type { Metadata } from 'next'
-import { GeistSans } from 'geist/font/sans'
-import { GeistMono } from 'geist/font/mono'
+import { DM_Sans, Fraunces } from 'next/font/google'
 import Script from 'next/script'
 import './globals.css'
 
+const fraunces = Fraunces({
+  subsets: ['latin'],
+  variable: '--font-display',
+})
+
+const dmSans = DM_Sans({
+  subsets: ['latin'],
+  variable: '--font-sans',
+})
+
 export const metadata: Metadata = {
   title: 'Deos Capsules',
-  description: 'Korret Stores',
+  description: 'Natural internal deodorant supplement with chlorophyllin and mint.',
 }
 
 export default function RootLayout({
@@ -15,15 +24,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${fraunces.variable} ${dmSans.variable}`}>
       <head>
-        <style>{`
-html {
-  font-family: ${GeistSans.style.fontFamily};
-  --font-sans: ${GeistSans.variable};
-  --font-mono: ${GeistMono.variable};
-}
-        `}</style>
         {/* Meta Pixel Code */}
         <Script
           id="fb-pixel-script"

@@ -16,10 +16,9 @@ function scrollToOrderForm() {
 export default function LandingPage() {
   return (
     <div className="min-h-screen bg-background">
-      {/* Hero Section */}
       <section className="relative overflow-hidden bg-stone-50 dark:bg-stone-950">
         <div className="container mx-auto px-4 py-16 lg:py-24">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid items-center gap-12 lg:grid-cols-2">
             <div className="space-y-8">
               <Badge className="bg-emerald-100 text-emerald-800 border-emerald-200 hover:bg-emerald-200 dark:bg-emerald-900/50 dark:text-emerald-200 dark:border-emerald-800">
                 <Leaf className="w-4 h-4 mr-2" />
@@ -30,9 +29,9 @@ export default function LandingPage() {
                   Stop all body odors <span className="text-emerald-600">from the source</span>
                 </h1>
                 <p className="text-xl text-muted-foreground leading-relaxed max-w-lg">
-                  Deos is a gentle, plant‑based deodorant pill with chlorophyllin and mint that stops all body
-                  odors from the inside out. It leaves every part of the body smelling fresh all day including private
-                  areas and the mouth also, so you feel calm and confident in hot weather, workouts, and everyday life.
+                  Deos is a gentle, plant‑based deodorant pill with chlorophyllin and mint that stops all body odors
+                  from the inside out. It leaves every part of the body smelling fresh all day including private areas
+                  and the mouth also, so you feel calm and confident in hot weather, workouts, and everyday life.
                 </p>
               </div>
 
@@ -79,7 +78,6 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* Trust Indicators */}
       <section className="py-8 bg-white dark:bg-gray-900 border-y">
         <div className="container mx-auto px-4">
           <div className="flex flex-wrap justify-center items-center gap-8 text-center">
@@ -100,7 +98,6 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* Problem Awareness */}
       <section className="py-16 lg:py-24">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
@@ -113,7 +110,8 @@ export default function LandingPage() {
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Sweat itself is nearly odorless. Odor forms when natural skin bacteria break down sweat from apocrine
-              glands(underarms & groin areas). Heat, stress, spicy foods, hormones, and fabrics can intensify the smell.
+              glands(underarms & groin areas). Heat, stress, spicy foods, hormones, and fabrics can intensify the
+              smell.
             </p>
           </div>
 
@@ -274,7 +272,6 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* Problem Awareness Section */}
       <section className="py-16 lg:py-24 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
@@ -331,7 +328,6 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* Science Section */}
       <section className="py-16 lg:py-24 bg-stone-50 dark:bg-gray-900">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -431,7 +427,6 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* Usage Section */}
       <section className="py-16 lg:py-24">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
@@ -504,7 +499,6 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* Social Proof & Testimonials */}
       <section className="py-16 lg:py-24 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
@@ -558,7 +552,6 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* Pricing Section */}
       <section className="py-16 lg:py-24 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
@@ -626,7 +619,6 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* FAQ Section */}
       <section className="py-16 lg:py-24">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
@@ -686,7 +678,6 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* Final CTA Section */}
       <section className="py-16 lg:py-24 bg-emerald-600 text-white">
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-3xl mx-auto space-y-8">
@@ -702,7 +693,6 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* Order Form Section */}
       <section id="order-form" className="py-16 lg:py-24 bg-stone-50 dark:bg-gray-900">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
@@ -747,7 +737,6 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* Footer */}
       <footer className="py-12 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="text-center space-y-4">
