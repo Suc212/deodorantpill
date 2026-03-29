@@ -43,13 +43,19 @@ export default function OrderForm() {
       })
 
       // Send email notification
-      await fetch("/api/send-email", {
+      const emailResponse = await fetch("/api/send-email", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify(formData),
       })
+
+      if (!emailResponse.ok) {
+        const errorBody = await emailResponse.json().catch(() => null)
+        const details = errorBody?.details ? `: ${errorBody.details}` : ""
+        throw new Error(`Failed to send order notification${details}`)
+      }
 
       setSubmitted(true)
     } catch (error) {
