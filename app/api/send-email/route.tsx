@@ -37,6 +37,7 @@ async function appendOrderToGoogleSheet(orderData: z.infer<typeof orderSchema>, 
     },
     body: JSON.stringify({
       timestamp: orderTimeIso,
+      product: "Deodorant Pill",  // NEW - hardcoded for this website
       firstName: orderData.firstName,
       lastName: orderData.lastName,
       email: orderData.email || "",
@@ -45,7 +46,7 @@ async function appendOrderToGoogleSheet(orderData: z.infer<typeof orderSchema>, 
       address: orderData.address,
       delivery: orderData.delivery || "",
       quantity: orderData.quantity,
-      status: "pending",
+    
     }),
   })
 
