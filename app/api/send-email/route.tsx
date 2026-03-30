@@ -37,7 +37,7 @@ async function appendOrderToGoogleSheet(orderData: z.infer<typeof orderSchema>, 
     },
     body: JSON.stringify({
       timestamp: orderTimeIso,
-      product: "Deodorant Pill",  // NEW - hardcoded for this website
+      product: "Deos",  // NEW - hardcoded for this website
       firstName: orderData.firstName,
       lastName: orderData.lastName,
       email: orderData.email || "",
