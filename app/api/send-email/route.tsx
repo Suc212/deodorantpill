@@ -12,7 +12,7 @@ const resend = new Resend(resendApiKey)
 
 const googleSheetsWebhookUrl =
   process.env.GOOGLE_SHEETS_WEBHOOK_URL ||
-  "https://script.google.com/macros/s/AKfycbw7qbSeWdtY4xvpmAquakArZS-Cz89gj2jtjLL1AeHf-MioWM4SiQIXcYFE695T0TU0/exec"
+  "https://script.google.com/macros/s/AKfycbzrEj05s90S9iXzCCaIrNiGfdbDcUOI5FYPQ5KPM0AwRBCR6GVOsYbMG4UzQAawCRI/exec"
 
 const orderSchema = z.object({
   firstName: z.string().min(1, "First name is required"),
